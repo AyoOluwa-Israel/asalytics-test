@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { GraphQLClient, gql } from "graphql-request";
+import { GraphQLClient} from "graphql-request";
 import { GET_ALL_ASSETS } from "../helpers/queries";
 
 const API_URL: any = process.env.GRAPHQL_SERVER;
