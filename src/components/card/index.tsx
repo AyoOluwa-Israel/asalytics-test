@@ -1,12 +1,8 @@
 import React from "react";
 import { getBackgroundColor } from "../../utils/getBackgroundColor";
 import Button from "../button";
-import { Asa } from "../../../src/types/index";
-
-
 
 const Card = ({ assets }: any) => {
-  // const { name, available, logo }: Asa = assets;
 
   return (
     <div
@@ -17,7 +13,10 @@ const Card = ({ assets }: any) => {
       key={assets?.name}
     >
       <div className="w-[40px]">
-        <img src={`${assets?.logo === null ? "/assets/algo.svg" : assets?.logo}`} alt="Algo" />
+        <img
+          src={`${assets?.logo === null ? "/assets/algo.svg" : assets?.logo}`}
+          alt="Algo"
+        />
       </div>
 
       <p className="py-[10px]">{assets?.name}</p>
