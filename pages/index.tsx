@@ -18,7 +18,11 @@ const Home: NextPage = () => {
   const { data, isLoading } = getAllAsset();
 
   if (isLoading) {
-    return <Loader />;
+    return (
+      <div data-testid="loading">
+        <Loader />
+      </div>
+    );
   }
   return (
     <div className="font-primary bg-primary text-black">
