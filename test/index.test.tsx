@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { getAllAsset } from "../src/services/assetService";
 import Card from "../src/components/card";
-import Home from ".";
+import Home from "../pages";
 
 // Solves TypeScript Errors
 const mockedGetAssets = getAllAsset as jest.Mock<any>;
