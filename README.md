@@ -4,8 +4,7 @@ Deployed using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&u
 
 
 ## Test Preview
-![Asalytics test Preview](https://res.cloudinary.com/israelayooluwa/image/upload/v1660235432/Group_4048_q3zjsh.png)
-<img src="https://res.cloudinary.com/israelayooluwa/image/upload/v1660235432/Group_4048_q3zjsh.png" width="500"/>
+<img src="https://res.cloudinary.com/israelayooluwa/image/upload/v1660235432/Group_4048_q3zjsh.png" width="500" alt="Asalytics test preview"/>
 
 ## Stack Used
 `React Query`
