@@ -8,7 +8,7 @@ const Header = () => {
         <img src="/assets/logo.png" alt="ASALytics Logo" />
       </div>
 
-      <Button text="ANALYZE ASAs" styles="border-2 border-black bg-black py-[1em] px-[2em] text-[16px] hover:bg-primary hover:text-black "/>
+      <Button text="ANALYZE ASAs" styles="border-2 border-black bg-black py-[1em] px-[2em] md:text-[16px] text-[12px] hover:bg-primary hover:text-black "/>
       
     </div>
   );

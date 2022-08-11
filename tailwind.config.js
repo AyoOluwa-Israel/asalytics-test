@@ -14,6 +14,17 @@ module.exports = {
         black: "#000000",
         sideBorder: "#B7BECC",
       },
+      boxShadow:{
+        "3xl": "0px 2px 8px 0px rgba(99, 99, 99, 0.2) "
+      },
+      screens: {
+        sm: "540px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1200px",
+        "2xl": "1536px",
+        "3xl": "1920px",
+      },
     },
   },
   plugins: [],

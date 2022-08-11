@@ -1,9 +1,9 @@
 export const getBackgroundColor = (data: boolean) => {
   let color;
   if (data) {
-    color = "success";
+    color = "bg-success";
   } else {
-    color = "danger";
+    color = "bg-danger";
   }
   return color;
 };
