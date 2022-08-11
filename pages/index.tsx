@@ -17,7 +17,6 @@ const Home: NextPage = () => {
     AOS.refresh();
   }, []);
   const { data, isLoading } = getAllAsset();
-  console.log("first", isLoading);
 
   if(isLoading) {
     return <Loader/>
@@ -26,7 +25,7 @@ const Home: NextPage = () => {
     <div className="font-primary bg-primary text-black">
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/favicon.svg" />
       </Head>
 
       <Header />
