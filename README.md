@@ -17,6 +17,10 @@ Deployed using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&u
 `AOS`
 `React spinners`
 
+### Test libraries used
+`Jest`
+`React Testing Library`
+
 ## Query Language
 `Graphql`
 
