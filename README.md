@@ -1,7 +1,6 @@
 ## Deploy your own
 
-Deployed using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
+Deployed using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
 ## Stack Used
@@ -19,7 +18,7 @@ Deployed using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&u
 `Graphql`
 
 ## Folder Structure (src) Library
----The important folders are located in the `src` directory. These include:
+The important folders are located in the `src` directory. These include:
 - `components`: contains app-wide components like errorBoundaries, reusable components, layouts, etc.
 - `helpers`:houses query logic that you'd like to be separate from your react components
 - `lib`: contains config files for libraries
