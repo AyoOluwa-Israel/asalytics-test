@@ -31,4 +31,15 @@ describe("getAllAsset", () => {
     render(<Home />);
     expect(screen.getByTestId("loading")).toBeTruthy();
   });
+
+
+  it("renders an error message", () => {
+    mockedGetAssets.mockImplementation(() => ({
+      isError: true,
+      error: { message: "Something went wrong" },
+    }));
+
+    render(<Home />);
+    expect(screen.getByTestId("error")).toBeTruthy();
+  });
 });

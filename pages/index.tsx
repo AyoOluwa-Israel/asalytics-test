@@ -8,20 +8,29 @@ import { getAllAsset } from "../src/services/assetService";
 import { Asa } from "../src/types/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
+import ErrorScreen from "../src/components/Error";
 
 const Home: NextPage = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
-  const { data, isLoading } = getAllAsset();
+  const { data, isLoading, isError } = getAllAsset();
 
   if (isLoading) {
     return (
       <div data-testid="loading">
         <Loader />
       </div>
+    );
+  }
+
+  if (isError) {
+    return (
+      <Fragment data-testid="error">
+        <ErrorScreen />
+      </Fragment>
     );
   }
   return (
