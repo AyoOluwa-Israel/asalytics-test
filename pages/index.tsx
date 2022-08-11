@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Card from "../src/components/card";
 import Header from "../src/components/header";
 import Loader from "../src/components/Loader";
 import { getAllAsset } from "../src/services/assetService";
-import { Asa } from "../src/types/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Fragment, useEffect } from "react";
+import { useEffect } from "react";
 import ErrorScreen from "../src/components/Error";
 
 const Home: NextPage = () => {
@@ -28,9 +26,9 @@ const Home: NextPage = () => {
 
   if (isError) {
     return (
-      <Fragment data-testid="error">
+      <div data-testid="error-screen">
         <ErrorScreen />
-      </Fragment>
+      </div>
     );
   }
   return (

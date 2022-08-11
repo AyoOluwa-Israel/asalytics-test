@@ -11,7 +11,7 @@ jest.mock("../src/services/assetService");
 
 describe("getAllAsset", () => {
   beforeEach(() => {
-    mockedGetAssets.mockImplementation(() => ({ isLoading: true }));
+    mockedGetAssets.mockImplementation(() => ({}));
   });
 
   afterEach(() => {
@@ -22,12 +22,15 @@ describe("getAllAsset", () => {
     render(<Card />);
   });
 
-  it("Fetches the assets details into card", () => {
+  it("Fetches the assets details into Card Components", () => {
     render(<Home />);
     expect(getAllAsset).toBeCalled();
   });
 
-  it("Fetches the assets details into card", () => {
+  it("Render when asset is fetching", () => {
+    mockedGetAssets.mockImplementation(() => ({
+      isLoading: true,
+    }));
     render(<Home />);
     expect(screen.getByTestId("loading")).toBeTruthy();
   });
@@ -39,6 +42,6 @@ describe("getAllAsset", () => {
     }));
 
     render(<Home />);
-    expect(screen.getByTestId("error")).toBeTruthy();
+    expect(screen.getByTestId("error-screen")).toBeTruthy();
   });
 });
