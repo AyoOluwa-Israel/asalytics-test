@@ -32,7 +32,6 @@ describe("getAllAsset", () => {
     expect(screen.getByTestId("loading")).toBeTruthy();
   });
 
-
   it("renders an error message", () => {
     mockedGetAssets.mockImplementation(() => ({
       isError: true,
