@@ -13,7 +13,7 @@ const Card = ({ assets }: any) => {
     <div
       className="group h-[180px] rounded-[10px] border-[1px] border-sideBorder  flex items-center flex-col justify-center hover:shadow-3xl transition ease-in-out duration-550 cursor-pointer"
       data-aos="zoom-in"
-      data-aos-duration="2000"
+      data-aos-duration="1500"
     >
       <div className="w-[40px]">
         <img src={`${logo === null ? "/assets/algo.svg" : logo}`} alt="Algo" />
