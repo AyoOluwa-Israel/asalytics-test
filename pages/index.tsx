@@ -32,7 +32,7 @@ const Home: NextPage = () => {
     );
   }
   return (
-    <div className="font-primary bg-primary text-black">
+    <div className="font-primary bg-primary text-black min-h-full">
       <Head>
         <title>ASAlytics</title>
         <link rel="icon" href="/assets/favicon.svg" />
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
       </h1>
 
       <div className="w-[85%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1em]">
-        {data?.results.map((assets: any[]) => (
+        {data?.result.map((assets: any[]) => (
           <Card assets={assets} />
         ))}
       </div>
